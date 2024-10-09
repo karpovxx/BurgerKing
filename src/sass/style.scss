@@ -83,6 +83,12 @@ h1, h2, h3, h4, h6 {
     opacity: 0.8;
   }
 }
+
+.btn--small {
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+}
 .main {
 
 }
@@ -191,7 +197,7 @@ letter-spacing: 0.1em;
 color: #F6762C;
 }
 
-.order__old-prise {
+.order__prise--old {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-decoration: line-through;
@@ -202,5 +208,142 @@ color: #F6762C;
 .order .btn {
   margin-top: 10px;
 }
+
+
+// СЕКЦИЯ PRODUCT
+
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+}
+ 
+.product__card {
+  width: 555px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0 60px 290px;
+  justify-content: center;
+}
+
+.product__card:nth-child(even) {
+  padding: 60px 290px 60px 50px;
+}
+.product__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+.product__wrapper {
+  width: 250px;
+
+}
+
+.product__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.product__desc {
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.product__prise {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color:#F6762C;
+}
+.product__prise + .product__prise {
+  margin-left: 5px;
+}
+
+.product__prise--old {
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.product .btn {
+  margin-top: 10px;
+}
+.card-queen {
+  background-image: url("../img/mask/Mask1.jpg")
+}
+.card-pizza {
+  background-image: url("../img/mask/Mask2.jpg")
+}
+.card-king {
+  background-image: url("../img/mask/Mask3.jpg")
+}
+.card-papa {
+  background-image: url("../img/mask/Mask4.jpg")
+}
+ 
+
+// СЕКЦИЯ FEEDBACK
+.feedback .container {
+ display: flex;
+ align-items: center;
+}
+
+.feedback {
+  padding: 80px 0 80px 0;
+}
+
+.feedback__text {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__text::before {
+  content: url("../img/cloud.png");
+}
+
+.feedback__desc {
+  opacity: 0.7;
+  width: 450px;
+  padding: 20px;
+}
+
+.feedback__autor {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.feedback__subautor {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+  display: block;
+}
+
+// СЕКЦИЯ DOWNLOAD 
+
+.download {
+  background-color: #312F30;
+  padding: 60px 0;
+}
+.download__title {
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+
+}
+.download .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
 
 
